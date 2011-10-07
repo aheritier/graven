@@ -1,0 +1,51 @@
+#!/bin/bash
+start_time=$(date +%s)
+
+echo -e "\033[1;37m  ________              ____   ____                \033[0m "
+echo -e "\033[1;37m /  _____/_______ _____ \\   \\ /   / ____    ____   \033[0m "
+echo -e "\033[1;37m/   \\  ___\\_  _ \\ \\__  \\ \\   Y   /_/ __ \\  /    \\  \033[0m "
+echo -e "\033[1;37m\\    \\_\\  \\|  | \\/ / __ \\_\\     / \\  ___/ |   |  \\ \033[0m "
+echo -e "\033[1;37m \______  /|__|   (____  / \\___/   \\___  >|___|  / \033[0m "
+echo -e "\033[1;37m        \\/             \\/              \\/      \\/  \033[0m "
+echo -e "\033[1;37m                                                        v 0.0.0.3\033[0m "
+echo
+echo -e "\033[1;33m                           by Gregory Boissinot & Arnaud Heritier\033[0m "
+echo 
+echo 
+echo -n [INFO] Loading groovy .
+for i in {1..15}
+do
+   echo -n .
+   sleep 1
+done
+echo
+echo -n [INFO] Downloading Internet .
+for i in {1..20}
+do
+   echo -n .
+   sleep 1
+done
+echo
+echo -n [INFO] Scanning for sub-modules .
+for i in {1..3}
+do
+   echo -n .
+   sleep 1
+done
+echo
+echo -n [INFO] Sending your project in the cloud .
+for i in {1..2}
+do
+   echo -n .
+   sleep 1
+done
+echo
+echo -e "\033[1;31m[ERROR] org.graven.SunIsShiningException : CLOUD NOT AVAILABLE :< \033[0m "
+echo [INFO] ------------------------------------------------------------------------
+echo [INFO] BUILD FAILED
+echo [INFO] ------------------------------------------------------------------------
+finish_time=$(date +%s)
+echo [INFO] Total time: $((finish_time - start_time))s
+echo [INFO] Finished at: $(date)
+echo [INFO] Final Memory: 14M/125M
+echo [INFO] ------------------------------------------------------------------------
